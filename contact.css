@@ -1,0 +1,111 @@
+body {
+	min-height: 1500px;
+	margin: 0;
+	padding: 0;
+	background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(contact-background.jpg);
+	background-position:center ;
+	background-size: cover;
+}
+
+.text p {
+	display: flex;
+	justify-content: flex-start;
+	font-family: 'Poppins', sans-serif;
+	font-size: 7rem;
+	opacity: 1;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+	letter-spacing: 1.5px;
+	margin-left: 40px;
+	margin-top: 120px;
+}
+
+.background-cover {
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 120px;
+  right: 0;
+  display: flex;
+  width: 45%;
+  height: 500px;
+  background-color:black ;
+  z-index: 1; 
+  opacity: 0.60;
+  border-radius: 50px;
+}
+
+.background-cover p {
+	position: relative;
+	top: 50px;
+	left: 20px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 2rem;
+	opacity: 1;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+.navbar {
+	width: 100%;
+	background-color: #FFFFFF;
+	box-shadow: 0px 8px 20px rgba(0, 0, 0, 1);
+	height:5rem;
+	top: 0;
+	position: fixed;
+	z-index: 1000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar .logo {
+	height: 4rem;
+	width: auto;
+	cursor: pointer;
+	padding-bottom: 10px;
+}
+
+.navbar ul {
+	display: flex;
+	justify-content: flex-end; 
+	list-style-type: none; /* remove the bullet points  */
+	padding: 10px 60px 0px 0px;
+	margin:0px
+	align-items: center;
+
+}
+
+.navbar ul li {
+  margin: 0px 30px 0px 20px;
+}
+
+.navbar ul li a {
+	color: black;
+	font-weight: bold;
+	text-decoration: none; /* remove the underline */
+	font-family: sans-serif;
+	position: relative;
+}
+
+/* visual effects for the navbar */
+
+.navbar ul li a::after {
+	content: '';
+	height: 2.5px;
+	width: 0%;
+	color:black;
+	position: absolute;
+	bottom: -5px;
+	left:0;
+	transition: 0.55s;
+	background-color: black;
+}
+
+.navbar ul li a:hover::after {
+	width: 100%;
+}
+
+.navbar ul li a:hover {
+	color:#B8860B;
+}
